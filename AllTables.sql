@@ -30,7 +30,9 @@ CREATE TABLE meeting_or_event (
 	);
 
 
-
+/* Member class History links the member ID to a clas ID for extra credit classes
+   Extra Credit Classes (ECC) is to link students receiving their due compensation
+   for attending MISA							 	*/
 
 CREATE TABLE member_class_history (
 	member_id INT FOREIGN KEY REFERENCES member(member_id),
@@ -44,6 +46,8 @@ CREATE TABLE ecc_classes (
 	class_code VARCHAR(250),
 	class_name TEXT
 	);
+
+/* Membership history is used to */
 
 CREATE TABLE membership_history (
 	member_id INT FOREIGN KEY REFERENCES member(member_id),
